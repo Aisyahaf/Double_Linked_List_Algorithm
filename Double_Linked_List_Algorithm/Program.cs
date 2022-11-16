@@ -78,6 +78,13 @@ namespace Double_Linked_List_Algorithm
             previous.next = newnode;
         }
 
-        pu
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            for(previous = current =START; current != null &&
+                rollNo != current.rollNumber; previous = current,
+                current = current.next) { }
+            return (current != null);
+        }
+
     }
 }
