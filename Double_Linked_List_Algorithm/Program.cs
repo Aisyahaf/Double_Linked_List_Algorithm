@@ -38,7 +38,22 @@ namespace Double_Linked_List_Algorithm
             newnode.rollNumber = rollNo;
             newnode.name = nm;
 
-            
+            if (START == null || rollNo <= START.rollNumber)
+            {
+                if ((START != null) && (rollNo == START.rollNumber))
+                {
+                    Console.WriteLine("\nDuplicate roll numbers not allowed");
+                    return;
+                }
+                newnode.next = START;
+                if (START != null)
+                    START.prev = newnode;
+                newnode.prev = null;
+                START = newnode;
+                return;
+            }
+
+
         }
     }
 }
