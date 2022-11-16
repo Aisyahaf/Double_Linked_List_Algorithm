@@ -53,7 +53,31 @@ namespace Double_Linked_List_Algorithm
                 return;
             }
 
+            Node previous, current;
+            for (current = previous = START; current != null &&
+                rollNo >= current.rollNumber; previous = current, current = 
+                current.next)
+            {
+                if(rollNo == current.rollNumber)
+                {
+                    Console.WriteLine("\nDuplicate roll numbers not allowed");
+                    return;
+                }
+            }
 
+            newnode.next = current;
+            newnode.prev = previous;
+
+            if (current == null)
+            {
+                newnode.next = null;
+                previous.next = newnode;
+                return;
+            }
+            current.prev = newnode;
+            previous.next = newnode;
         }
+
+        pu
     }
 }
