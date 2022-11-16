@@ -124,5 +124,28 @@ namespace Double_Linked_List_Algorithm
                     Console.Write(currentNode.rollNumber + " " + currentNode.name + "\n");
             }
         }
+
+        public void revtraverse()
+        {
+            if (lisEmpty())
+                Console.WriteLine("\nList is Empty");
+            else
+            {
+                Console.WriteLine("\nRecords in the descending order of " +
+                    "roll numbers are : \n");
+                Node currentNode;
+                for (currentNode = START; currentNode.next != null;
+                    currentNode = currentNode.next) { }
+                while (currentNode != null)
+                {
+                    Console.Write(currentNode.rollNumber + " " +
+                        currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
+                    
+            }
+        }
+
+
     }
 }
