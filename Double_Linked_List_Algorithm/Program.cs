@@ -127,7 +127,7 @@ namespace Double_Linked_List_Algorithm
 
         public void revtraverse()
         {
-            if (lisEmpty())
+            if (listEmpty())
                 Console.WriteLine("\nList is Empty");
             else
             {
@@ -145,7 +145,12 @@ namespace Double_Linked_List_Algorithm
                     
             }
         }
-
-
+        public bool listEmpty()
+        {
+            if (START == null)
+                return true;
+            else
+                return false;
+        }
     }
 }
