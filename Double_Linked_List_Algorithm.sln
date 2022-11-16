@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Double_Linked_List_Algorithm", "Double_Linked_List_Algorithm\Double_Linked_List_Algorithm.csproj", "{2BEC71B4-0AE2-4457-8D34-EF1BD641DC58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BEC71B4-0AE2-4457-8D34-EF1BD641DC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BEC71B4-0AE2-4457-8D34-EF1BD641DC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BEC71B4-0AE2-4457-8D34-EF1BD641DC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BEC71B4-0AE2-4457-8D34-EF1BD641DC58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {035755A0-CB76-46CB-B7E5-BE31E5E893CF}
+	EndGlobalSection
+EndGlobal
